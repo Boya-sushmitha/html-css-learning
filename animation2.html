@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        div{
+            background-color:lavender;
+            border:4px solid black;
+            height:600px;
+            width: 700px;
+        }
+        #circle{
+            background-color: aqua;
+            border: 2px gropve green;
+            height:50px;
+            width:50px;
+            margin:0%;
+            border-radius:50%;
+            animation-name: shape_animate;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            position:relative;
+            
+
+        }
+        @keyframes shape_animate{
+            from{background-color:aqua};
+            to{background-color: chartreuse;border-radius:0%;}
+            0%{
+                top:0px;
+                left:0px;
+                background-color: brown;
+                border:2px solid white;
+            }
+            25%{
+                top:0px;
+                left: 650px;
+                background-color:white;
+                border:2px solid brown;
+                border-radius: 50%;
+                 transform:rotate(45deg);
+            }
+            50%{
+                top: 550px;
+                left:650px;
+                background-color:brown;
+                border:2px solid white;
+                border-radius:0%;
+                 transform:rotate(90deg);
+            }
+            75%{
+                top:550px;
+                left:0px;
+                background-color:white;
+                border:2px solid brown;
+                border-radius:50%;
+                 transform:rotate(45deg);
+            }
+            100%{    
+                left:0px;
+                top:0px;
+                background-color:brown;
+                border:2px solid white;
+                border-radius:0%;
+                 transform:rotate(90deg);
+            }
+        }       
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="circle"></h1>
+    </div>
+    
+</body>
+</html>
