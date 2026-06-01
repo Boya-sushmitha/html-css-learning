@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle animatation</title>
+    <style>
+        #circle{
+            border:3px groove black;
+            height:250px;
+            width:250px;
+            background-color: red;
+            border-top-left-radius:150px;
+            border-top-right-radius:150px;
+            border-bottom-left-radius:150px;
+            border-bottom-right-radius:150px;
+            animation-name:circle_color;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes circle_color{
+             from{background-color: red;}
+             to{background-color: yellow; border-radius:0%;}
+        }
+    </style>
+</head>
+<body>
+    <p id="circle"></p>
+</body>
+</html>
