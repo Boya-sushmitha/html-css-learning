@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>full screen animatation</title>
+<style>
+   body{
+      margin:0;
+      overflow: hidden;
+   }
+   #box{
+       border:3px solid black;
+       height:100px;
+       width:100px;
+       background-color: red;
+       position: absolute;
+       margin:0%;
+       border-radius: 50%;
+       animation-name: circle_color;
+       animation-duration: 5s;
+       animation-iteration-count: infinite;
+   }
+
+   @keyframes circle_color{
+      from{background-color: red;}
+      to{background-color: yellow;border-radius: 0%;}
+      0%{
+         left:0%;
+         top:0%;
+      
+     }
+     25% {
+         left:90%;
+         top: 0;
+     }
+      50% {
+          left:90%;
+          top:80%; 
+    }      
+      75% {
+         left:0%;
+         top:80%;
+    }
+   
+      100% {
+         left:0%;
+         top:0%;
+    } 
+}
+</style>
+</head>
+<body>
+   <div id="box"></div>
+</body>
+</html>
